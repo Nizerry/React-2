@@ -1,16 +1,14 @@
-import React from 'react'
 
-const Card = (items) => {
+const Card = ({items}) => {
   return (
     <div>
         {items.map((item)=>{
-        return(
       <div key={item.id}>
         <h2 > {item.title}</h2>
       <img width={'200px'} src={item.image} />
       <p>{item.description}</p>
       <button className="btn btn-primary">Add to Card</button>
-      </div>)
+      </div>
     })}
 
     </div>
